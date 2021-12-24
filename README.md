@@ -20,8 +20,8 @@ Regular server build: 1 GB<br/>
 An un-named Asset store plugin: 200 MB<br/>
 This BuildStripper: 60mb<br/>
 <br/>
-Image previews soon tm<br/>
-![BuildVersionProcessor1](https://user-images.githubusercontent.com/57072365/131377575-f9d2a5a1-a46c-45cc-a75f-615fc135b82b.jpg)
+Image preview of build process.<br/>
+![BuildStripperImage1](https://user-images.githubusercontent.com/57072365/147373339-f707e24b-64aa-4bdb-bed1-e7a233e08a56.jpg)
 <br/><br/>
 Optional Unity Menu buttons, for manually calling, just un-comment them in the script.<br/>
 <br/><br/>
