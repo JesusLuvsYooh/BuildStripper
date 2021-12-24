@@ -12,7 +12,9 @@ Version 1.0  Credits:
 <br/><br/>
 This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
 <br/>
-Set buildStrippedServer bool to false, to disable auto version changing, which is meant for headless servers.
+Set "buildStrippedServer" bool to false, to disable auto version changing, which is meant for headless servers.
+<br/>
+Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio an Textures.
 <br/>
 This script should drastically lower your build size, and optimise your game;  
 <br/>
