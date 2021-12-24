@@ -26,8 +26,9 @@ This BuildStripper: 60mb<br/>
 Image preview of build process.<br/>
 ![BuildStripperImage1](https://user-images.githubusercontent.com/57072365/147373339-f707e24b-64aa-4bdb-bed1-e7a233e08a56.jpg)
 <br/><br/>
-Optional Unity Menu buttons, for manually calling, just un-comment them in the script.<br/>
+Optional Unity Menu buttons, for manually calling, just un-comment them in the script.<br/>  
+Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up. 
 <br/><br/>
 Enjoy!  ^_^
   
-Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up.  
+ 
