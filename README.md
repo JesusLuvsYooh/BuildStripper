@@ -8,6 +8,7 @@ Build Stripper gets the build pipeline to totally ignore select folders, and rev
 Version 1.0  Credits:
 <br/>
 [JesusLuvsYooh](https://github.com/JesusLuvsYooh) StephenAllenGames.co.uk  
+#WaterCooler gang for letting me Rubber Duck to them.
 <br/><br/>
 This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
 <br/>
@@ -25,6 +26,6 @@ Image preview of build process.<br/>
 <br/><br/>
 Optional Unity Menu buttons, for manually calling, just un-comment them in the script.<br/>
 <br/><br/>
-Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up.  
 Enjoy!  ^_^
-
+  
+Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up.  
