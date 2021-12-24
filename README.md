@@ -10,11 +10,11 @@ Version 1.0  Credits:
 [JesusLuvsYooh](https://github.com/JesusLuvsYooh) StephenAllenGames.co.uk  
 #WaterCooler gang for letting me Rubber Duck to them.
 <br/><br/>
-This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
+1: This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
 <br/>
-Set "buildStrippedServer" bool to false, to disable auto version changing, which is meant for headless servers.
+2: Set "buildStrippedServer" bool to false to disable, when doing client builds, true is meant for headless servers.
 <br/>
-Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio an Textures.
+3: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio an Textures.
 <br/>
 This script should drastically lower your build size, and optimise your game;  
 <br/>
@@ -26,7 +26,7 @@ This BuildStripper: 60mb<br/>
 Image preview of build process.<br/>
 ![BuildStripperImage1](https://user-images.githubusercontent.com/57072365/147373339-f707e24b-64aa-4bdb-bed1-e7a233e08a56.jpg)
 <br/><br/>
-Optional Unity Menu buttons, for manually calling, just un-comment them in the script.<br/>  
+Optional Unity Menu buttons, for manually calling, just un-comment them in the script.  
 Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up. 
 <br/><br/>
 Enjoy!  ^_^
