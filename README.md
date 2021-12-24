@@ -15,7 +15,7 @@ Set buildStrippedServer bool to false, to disable auto version changing, which i
 <br/>
 This script should drastically lower your build size, and optimise your game;  
 <br/>
-Build sizes differences in an example project:<br/>
+Build size differences in an example project:<br/>
 Regular server build: 1 GB<br/>
 An un-named Asset store plugin: 200 MB<br/>
 This BuildStripper: 60mb<br/>
