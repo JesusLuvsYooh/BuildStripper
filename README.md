@@ -14,7 +14,7 @@ Version 1.0  Credits:
 <br/>
 2: Set "buildStrippedServer" bool to false to disable, when doing client builds, true is meant for headless servers.
 <br/>
-3: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio an Textures.  
+3: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio an Textures.
 <br/><br/>
 This script should drastically lower your build size, and optimise your game;  
 <br/>
