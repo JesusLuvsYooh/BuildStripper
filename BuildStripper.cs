@@ -24,7 +24,7 @@ class BuildStripper : IPreprocessBuildWithReport
         "Shaders",
         "Sounds",
         "StreamingAssets",
-        "Textures",
+        "Textures"
     };
 
     public int callbackOrder { get { return 0; } }
