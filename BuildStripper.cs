@@ -69,6 +69,7 @@ class BuildStripper : IPreprocessBuildWithReport
         }
     }
 
+    // We run this check to detect build failures or cancellations, to then apply the Revert function.
     private void BuildCheck()
     {
         //Debug.Log("BuildCheck " + BuildPipeline.isBuildingPlayer);
