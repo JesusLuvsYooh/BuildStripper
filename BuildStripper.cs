@@ -27,7 +27,8 @@ class BuildStripper : IPreprocessBuildWithReport
         "Textures",
     };
 
-    public int callbackOrder { get { return 0; } }   
+    public int callbackOrder { get { return 0; } }
+    private string stringValue;
 
     public void OnPreprocessBuild(BuildReport report)
     {
@@ -60,12 +61,11 @@ class BuildStripper : IPreprocessBuildWithReport
     {
         foreach (string _value in folderPaths)
         {
-            // to do - optimise
-            string s1 = _value;
-            string s2 = s1.Substring(s1.Length - 1);
-            if (s2 == "~") { s1 = s1.Substring(0, s1.Length - 1); }
+            stringValue = _value;
+            //end character is used instead of "Replace", just incase people have "~" symbol throughout folder/file names.
+            if (stringValue.Substring(stringValue.Length - 1) == "~") { stringValue = stringValue.Substring(0, stringValue.Length - 1); }
 
-            AssetDatabase.MoveAsset("Assets/" + _value + "~", "Assets/" + s1);
+            AssetDatabase.MoveAsset("Assets/" + _value + "~", "Assets/" + _value);
         }
     }
 
