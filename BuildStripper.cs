@@ -1,4 +1,5 @@
 // JesusLuvsYooh StephenAllenGames.co.uk
+// https://github.com/JesusLuvsYooh/BuildStripper
 // Version 1.0
 
 using UnityEditor;
