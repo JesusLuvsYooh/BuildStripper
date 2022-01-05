@@ -12,10 +12,10 @@ Version 1.1  Credits:
 <br/><br/>
 1: This file must be in an "Editor" folder (Unity/Assets/Editor) for example.  
 <br/>
-2: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.  
-Set autoDetectServerBuild to false to disable.  
+2: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio and Textures.
 <br/>
-3: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio and Textures.
+3: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.  
+Set autoDetectServerBuild to false to disable.  
 <br/><br/>
 This script should drastically lower your build size, and optimise your game;
 <br/>
