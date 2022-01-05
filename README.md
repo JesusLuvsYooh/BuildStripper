@@ -12,8 +12,6 @@ Version 1.1  Credits:
 <br/><br/>
 1: This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
 <br/>
-2: Set "buildStrippedServer" bool to false to disable, when doing client builds, true is meant for headless servers.
-
 2: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.  
 Set autoDetectServerBuild to fals to overwrite.  
 <br/>
