@@ -5,7 +5,7 @@
 # BuildStripper
 Build Stripper gets the build pipeline to totally ignore select folders, and reverts back after.  
 <br/><br/>
-Version 1.0  Credits:
+Version 1.1  Credits:
 <br/>
 [JesusLuvsYooh](https://github.com/JesusLuvsYooh) StephenAllenGames.co.uk  
 #WaterCooler gang for letting me Rubber Duck to them.
@@ -13,6 +13,9 @@ Version 1.0  Credits:
 1: This file must be in an "Editor" folder (Unity/Assets/Editor) for example.
 <br/>
 2: Set "buildStrippedServer" bool to false to disable, when doing client builds, true is meant for headless servers.
+
+2: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.  
+Set autoDetectServerBuild to fals to overwrite.  
 <br/>
 3: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio and Textures.
 <br/><br/>
