@@ -14,8 +14,7 @@ Version 1.1  Credits:
 <br/>
 2: Edit the "folderPaths" list, making sure it only includes items that server build does not need, such as Audio and Textures.  
 <br/>
-3: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.  
-Set autoDetectServerBuild to false to disable.
+3: If "Server Build" is ticked in Unitys build window, automatically strip folders listed during build process.
 <br/><br/>
 This script should drastically lower your build size, and optimise your game;
 <br/>
@@ -27,9 +26,10 @@ This BuildStripper: 60mb<br/>
 Image preview of build process.<br/>
 ![BuildStripperImage1](https://user-images.githubusercontent.com/57072365/147373339-f707e24b-64aa-4bdb-bed1-e7a233e08a56.jpg)
 <br/><br/>
-Optional Unity Menu buttons, for manually calling, just un-comment them in the script.  
-Be smart with which folders you list, ones like Scenes or Scripts etc will of course stop server/game from working.  ;)  
-Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up. 
+A: Optional Unity Menu buttons, for manually calling, just un-comment them in the script.  
+B: Be smart with which folders you list, ones like Scenes or Scripts etc will of course stop server/game from working.  ;)  
+C: Set autoDetectServerBuild to false to disable auto "Server Build" detection.  
+D: Please be aware this is version 1, an Alpha/Beta, code needs to be optimised and tidied up. 
 <br/><br/>
 Enjoy!  ^_^
   
