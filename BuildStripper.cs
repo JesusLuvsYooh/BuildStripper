@@ -1,6 +1,6 @@
 // JesusLuvsYooh StephenAllenGames.co.uk
 // https://github.com/JesusLuvsYooh/BuildStripper
-// Version 1.0
+// Version 1.1
 
 using UnityEditor;
 using UnityEditor.Build;
@@ -10,8 +10,10 @@ using UnityEngine;
 class BuildStripper : IPreprocessBuildWithReport
 {
     // - CHANGE -
-    // Set to false if not doing headless server build
-    private bool buildStrippedServer = true;
+    // If true, automatically sets buildStrippedServer = true  If "Server Build" is ticked in Unitys build window.
+    private bool autoDetectServerBuild = true;
+    // Do not change, use the above boolean. Only Overwrite if you want to strip from a non "Server Build".
+    private bool buildStrippedServer = false;  
 
     // - CHANGE -
     // Example folders that are not needed on headless server build
@@ -33,11 +35,13 @@ class BuildStripper : IPreprocessBuildWithReport
 
     public void OnPreprocessBuild(BuildReport report)
     {
+        if (autoDetectServerBuild && report.summary.options.HasFlag(BuildOptions.EnableHeadlessMode)) { buildStrippedServer = true; }
+        
         if (buildStrippedServer)
         {
             EditorApplication.update += BuildCheck;
             StripBuild();
-            Debug.Log("OnPreprocessBuild for target " + report.summary.platform + " at path " + report.summary.outputPath); 
+            UnityEngine.Debug.Log("OnPreprocessBuild for target " + report.summary.platform + " at path " + report.summary.outputPath); 
         }
     }
 
@@ -46,7 +50,7 @@ class BuildStripper : IPreprocessBuildWithReport
         if (buildStrippedServer)
         {
             RevertStripBuild();
-            Debug.Log("OnPostprocessBuild for target " + report.summary.platform + " at path " + report.summary.outputPath);
+            UnityEngine.Debug.Log("OnPostprocessBuild for target " + report.summary.platform + " at path " + report.summary.outputPath);
         }
     }
 
@@ -73,7 +77,7 @@ class BuildStripper : IPreprocessBuildWithReport
     // We run this check to detect build failures or cancellations, to then apply the Revert function.
     private void BuildCheck()
     {
-        //Debug.Log("BuildCheck " + BuildPipeline.isBuildingPlayer);
+        // UnityEngine.Debug.Log("BuildCheck " + BuildPipeline.isBuildingPlayer);
         if (!BuildPipeline.isBuildingPlayer)
         {
             EditorApplication.update -= BuildCheck;
@@ -83,16 +87,16 @@ class BuildStripper : IPreprocessBuildWithReport
 
 
     /*
-    [MenuItem("File/Build Stripped Server", priority = 1)]
+    [MenuItem("File/Setup Stripped Folders", priority = 1)]
     public static void ButtonStrippedServer()
     {
-        Debug.Log("Button Stripped Server called.");
+        UnityEngine.Debug.Log("Button Stripped Server called.");
         StripBuild();
     }
-    [MenuItem("File/Revert Stripped Server", priority = 1)]
+    [MenuItem("File/Revert Stripped Folders", priority = 1)]
     public static void ButtonStrippedServerRevert()
     {
-        Debug.Log("Button Revert Stripped Server called.");
+        UnityEngine.Debug.Log("Button Revert Stripped Server called.");
         RevertStripBuild();
     }
     */
