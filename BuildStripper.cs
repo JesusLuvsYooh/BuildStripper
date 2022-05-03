@@ -35,7 +35,7 @@ class BuildStripper : IPreprocessBuildWithReport
 
     public void OnPreprocessBuild(BuildReport report)
     {
-        if (autoDetectServerBuild && report.summary.options.HasFlag(BuildOptions.EnableHeadlessMode)) { buildStrippedServer = true; }
+        if (autoDetectServerBuild && EditorUserBuildSettings.standaloneBuildSubtarget == StandaloneBuildSubtarget.Server) { buildStrippedServer = true; }
         
         if (buildStrippedServer)
         {
